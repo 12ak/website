@@ -152,67 +152,67 @@
         
         <div class="album-preview">
             
-            <a href="/gallery/tasmania/" class="preview-photo">
+            <a href="/media/gallery/photos/2021-02-24_09.49.29.jpg" class="preview-photo" data-lightbox data-album="tasmania">
                 <img src="/media/gallery/photos/2021-02-24_09.49.29.jpg" alt="Tasmania" loading="lazy" decoding="async">
             </a>
             
-            <a href="/gallery/tasmania/" class="preview-photo">
+            <a href="/media/gallery/photos/2021-02-23_16.36.03.jpg" class="preview-photo" data-lightbox data-album="tasmania">
                 <img src="/media/gallery/photos/2021-02-23_16.36.03.jpg" alt="Tasmania" loading="lazy" decoding="async">
             </a>
             
-            <a href="/gallery/tasmania/" class="preview-photo">
+            <a href="/media/gallery/photos/2021-02-24_18.53.10.jpg" class="preview-photo" data-lightbox data-album="tasmania">
                 <img src="/media/gallery/photos/2021-02-24_18.53.10.jpg" alt="Tasmania" loading="lazy" decoding="async">
             </a>
             
-            <a href="/gallery/tasmania/" class="preview-photo">
+            <a href="/media/gallery/photos/2021-02-24_16.45.42.jpg" class="preview-photo" data-lightbox data-album="tasmania">
                 <img src="/media/gallery/photos/2021-02-24_16.45.42.jpg" alt="Tasmania" loading="lazy" decoding="async">
             </a>
             
-            <a href="/gallery/tasmania/" class="preview-photo">
+            <a href="/media/gallery/photos/2021-02-24_07.16.25.jpg" class="preview-photo" data-lightbox data-album="tasmania">
                 <img src="/media/gallery/photos/2021-02-24_07.16.25.jpg" alt="Tasmania" loading="lazy" decoding="async">
             </a>
             
-            <a href="/gallery/tasmania/" class="preview-photo">
+            <a href="/media/gallery/photos/2021-02-24_06.24.50.jpg" class="preview-photo" data-lightbox data-album="tasmania">
                 <img src="/media/gallery/photos/2021-02-24_06.24.50.jpg" alt="Tasmania" loading="lazy" decoding="async">
             </a>
             
-            <a href="/gallery/tasmania/" class="preview-photo">
+            <a href="/media/gallery/photos/2021-02-24_06.19.54.jpg" class="preview-photo" data-lightbox data-album="tasmania">
                 <img src="/media/gallery/photos/2021-02-24_06.19.54.jpg" alt="Tasmania" loading="lazy" decoding="async">
             </a>
             
-            <a href="/gallery/tasmania/" class="preview-photo">
+            <a href="/media/gallery/photos/2021-02-23_16.28.37.jpg" class="preview-photo" data-lightbox data-album="tasmania">
                 <img src="/media/gallery/photos/2021-02-23_16.28.37.jpg" alt="Tasmania" loading="lazy" decoding="async">
             </a>
             
-            <a href="/gallery/tasmania/" class="preview-photo">
+            <a href="/media/gallery/photos/2021-02-23_15.49.07.jpg" class="preview-photo" data-lightbox data-album="tasmania">
                 <img src="/media/gallery/photos/2021-02-23_15.49.07.jpg" alt="Tasmania" loading="lazy" decoding="async">
             </a>
             
-            <a href="/gallery/tasmania/" class="preview-photo">
+            <a href="/media/gallery/photos/2021-02-23_14.53.25.jpg" class="preview-photo" data-lightbox data-album="tasmania">
                 <img src="/media/gallery/photos/2021-02-23_14.53.25.jpg" alt="Tasmania" loading="lazy" decoding="async">
             </a>
             
-            <a href="/gallery/tasmania/" class="preview-photo">
+            <a href="/media/gallery/photos/2021-02-23_14.17.02.jpg" class="preview-photo" data-lightbox data-album="tasmania">
                 <img src="/media/gallery/photos/2021-02-23_14.17.02.jpg" alt="Tasmania" loading="lazy" decoding="async">
             </a>
             
-            <a href="/gallery/tasmania/" class="preview-photo">
+            <a href="/media/gallery/photos/2021-02-22_14.59.32.jpg" class="preview-photo" data-lightbox data-album="tasmania">
                 <img src="/media/gallery/photos/2021-02-22_14.59.32.jpg" alt="Tasmania" loading="lazy" decoding="async">
             </a>
             
-            <a href="/gallery/tasmania/" class="preview-photo">
+            <a href="/media/gallery/photos/2021-02-22_14.56.15.jpg" class="preview-photo" data-lightbox data-album="tasmania">
                 <img src="/media/gallery/photos/2021-02-22_14.56.15.jpg" alt="Tasmania" loading="lazy" decoding="async">
             </a>
             
-            <a href="/gallery/tasmania/" class="preview-photo">
+            <a href="/media/gallery/photos/2021-02-22_14.51.20.jpg" class="preview-photo" data-lightbox data-album="tasmania">
                 <img src="/media/gallery/photos/2021-02-22_14.51.20.jpg" alt="Tasmania" loading="lazy" decoding="async">
             </a>
             
-            <a href="/gallery/tasmania/" class="preview-photo">
+            <a href="/media/gallery/photos/2021-02-22_14.18.04.jpg" class="preview-photo" data-lightbox data-album="tasmania">
                 <img src="/media/gallery/photos/2021-02-22_14.18.04.jpg" alt="Tasmania" loading="lazy" decoding="async">
             </a>
             
-            <a href="/gallery/tasmania/" class="preview-photo">
+            <a href="/media/gallery/photos/2021-02-22_14.07.34.jpg" class="preview-photo" data-lightbox data-album="tasmania">
                 <img src="/media/gallery/photos/2021-02-22_14.07.34.jpg" alt="Tasmania" loading="lazy" decoding="async">
             </a>
             
@@ -289,7 +289,14 @@
                 if (link) {
                     e.preventDefault();
                     e.stopPropagation();
-                    const allLinks = Array.from(document.querySelectorAll('a[data-lightbox]'));
+                    // Group by album if data-album is present
+                    const album = link.getAttribute('data-album');
+                    var allLinks;
+                    if (album) {
+                        allLinks = Array.from(document.querySelectorAll('a[data-lightbox][data-album="' + album + '"]'));
+                    } else {
+                        allLinks = Array.from(document.querySelectorAll('a[data-lightbox]'));
+                    }
                     const images = allLinks.map(function(l) { return l.getAttribute('href'); });
                     const index = allLinks.indexOf(link);
                     openLightbox(images, index);
@@ -323,6 +330,21 @@
                 if (e.key === 'ArrowRight') nextImage();
                 if (e.key === 'ArrowLeft') prevImage();
             });
+
+            // Auto-open lightbox if URL has #photo-{id} hash
+            var hash = window.location.hash;
+            if (hash && hash.startsWith('#photo-')) {
+                var photoId = hash.substring(7);
+                var targetLink = document.querySelector('a[data-lightbox][data-photo-id="' + photoId + '"]');
+                if (targetLink) {
+                    var allLinks = Array.from(document.querySelectorAll('a[data-lightbox]'));
+                    var images = allLinks.map(function(l) { return l.getAttribute('href'); });
+                    var index = allLinks.indexOf(targetLink);
+                    if (index >= 0) {
+                        openLightbox(images, index);
+                    }
+                }
+            }
         })();
         </script>
     </body>

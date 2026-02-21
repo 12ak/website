@@ -187,7 +187,14 @@
                 if (link) {
                     e.preventDefault();
                     e.stopPropagation();
-                    const allLinks = Array.from(document.querySelectorAll('a[data-lightbox]'));
+                    // Group by album if data-album is present
+                    const album = link.getAttribute('data-album');
+                    var allLinks;
+                    if (album) {
+                        allLinks = Array.from(document.querySelectorAll('a[data-lightbox][data-album="' + album + '"]'));
+                    } else {
+                        allLinks = Array.from(document.querySelectorAll('a[data-lightbox]'));
+                    }
                     const images = allLinks.map(function(l) { return l.getAttribute('href'); });
                     const index = allLinks.indexOf(link);
                     openLightbox(images, index);
@@ -221,6 +228,21 @@
                 if (e.key === 'ArrowRight') nextImage();
                 if (e.key === 'ArrowLeft') prevImage();
             });
+
+            // Auto-open lightbox if URL has #photo-{id} hash
+            var hash = window.location.hash;
+            if (hash && hash.startsWith('#photo-')) {
+                var photoId = hash.substring(7);
+                var targetLink = document.querySelector('a[data-lightbox][data-photo-id="' + photoId + '"]');
+                if (targetLink) {
+                    var allLinks = Array.from(document.querySelectorAll('a[data-lightbox]'));
+                    var images = allLinks.map(function(l) { return l.getAttribute('href'); });
+                    var index = allLinks.indexOf(targetLink);
+                    if (index >= 0) {
+                        openLightbox(images, index);
+                    }
+                }
+            }
         })();
         </script>
     </body>

@@ -125,6 +125,10 @@ body.position-left .navigation-container {
     color: inherit;
 }
 
+.entry h1 a {
+    text-decoration: none;
+}
+
 .entry a:hover {
     color: rgba(0, 0, 0, 0.5);
 }
@@ -141,6 +145,7 @@ body.position-left .navigation-container {
     flex-wrap: wrap;
     padding: 1rem;
     padding-right: 1.5rem;
+    overflow: hidden;
 }
 
 .posts.inline {
