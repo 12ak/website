@@ -4,6 +4,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#ffffff" />
         <title>Luke Blackman</title>
         <meta
             name="description"
@@ -25,6 +26,10 @@
         />
         
 
+        <!-- Preconnect to external domains for faster loading -->
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+
         <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
         <link
             rel="alternate"
@@ -33,15 +38,6 @@
             href="/feed/"
         />
         <link rel="stylesheet" href="/static/css/style.css" />
-
-        <!-- Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-47GTWN9S5M"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-47GTWN9S5M');
-        </script>
     </head>
     <body class="position-left">
         <div class="navigation-container align-left">
@@ -422,6 +418,33 @@
                     }
                 }
             }
+        })();
+        </script>
+
+        <!-- Google Analytics - deferred loading for better performance -->
+        <script>
+        (function() {
+            // Load GA after page interaction or after 3 seconds, whichever comes first
+            var loaded = false;
+            function loadGA() {
+                if (loaded) return;
+                loaded = true;
+                var script = document.createElement('script');
+                script.src = 'https://www.googletagmanager.com/gtag/js?id=G-47GTWN9S5M';
+                script.async = true;
+                document.head.appendChild(script);
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                window.gtag = gtag;
+                gtag('js', new Date());
+                gtag('config', 'G-47GTWN9S5M');
+            }
+            // Load on first interaction
+            ['scroll', 'click', 'touchstart', 'keydown'].forEach(function(event) {
+                document.addEventListener(event, loadGA, {once: true, passive: true});
+            });
+            // Or after 3 seconds if no interaction
+            setTimeout(loadGA, 3000);
         })();
         </script>
     </body>

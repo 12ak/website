@@ -4,6 +4,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#ffffff" />
         <title>Gallery - Luke Blackman</title>
         <meta
             name="description"
@@ -25,6 +26,10 @@
         />
         
 
+        <!-- Preconnect to external domains for faster loading -->
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+
         <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
         <link
             rel="alternate"
@@ -33,15 +38,6 @@
             href="/feed/"
         />
         <link rel="stylesheet" href="/static/css/style.css" />
-
-        <!-- Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-47GTWN9S5M"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-47GTWN9S5M');
-        </script>
     </head>
     <body class="position-left">
         <div class="navigation-container align-left">
@@ -93,55 +89,120 @@
         <div class="album-preview">
             
             <a href="/media/gallery/photos/1.jpg" class="preview-photo" data-lightbox data-album="portfolio">
-                <img src="/media/gallery/photos/1.jpg" alt="Portfolio" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/1_thumb.webp 266w, /media/gallery/photos/medium/1_medium.webp 533w, /media/gallery/photos/webp/1_full.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/1.jpg" alt="Portfolio" loading="eager" fetchpriority="high">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/2.jpg" class="preview-photo" data-lightbox data-album="portfolio">
-                <img src="/media/gallery/photos/2.jpg" alt="Portfolio" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/2_thumb.webp 266w, /media/gallery/photos/medium/2_medium.webp 533w, /media/gallery/photos/webp/2_full.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/2.jpg" alt="Portfolio" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/3.jpg" class="preview-photo" data-lightbox data-album="portfolio">
-                <img src="/media/gallery/photos/3.jpg" alt="Portfolio" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/3_thumb.webp 600w, /media/gallery/photos/medium/3_medium.webp 1200w, /media/gallery/photos/webp/3_full.webp 1200w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/3.jpg" alt="Portfolio" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/4.jpg" class="preview-photo" data-lightbox data-album="portfolio">
-                <img src="/media/gallery/photos/4.jpg" alt="Portfolio" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/4_thumb.webp 266w, /media/gallery/photos/medium/4_medium.webp 533w, /media/gallery/photos/webp/4_full.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/4.jpg" alt="Portfolio" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/5.jpg" class="preview-photo" data-lightbox data-album="portfolio">
-                <img src="/media/gallery/photos/5.jpg" alt="Portfolio" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/5_thumb.webp 600w, /media/gallery/photos/medium/5_medium.webp 1200w, /media/gallery/photos/webp/5_full.webp 1200w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/5.jpg" alt="Portfolio" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/6.jpg" class="preview-photo" data-lightbox data-album="portfolio">
-                <img src="/media/gallery/photos/6.jpg" alt="Portfolio" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/6_thumb.webp 266w, /media/gallery/photos/medium/6_medium.webp 533w, /media/gallery/photos/webp/6_full.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/6.jpg" alt="Portfolio" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/7.jpg" class="preview-photo" data-lightbox data-album="portfolio">
-                <img src="/media/gallery/photos/7.jpg" alt="Portfolio" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/7_thumb.webp 266w, /media/gallery/photos/medium/7_medium.webp 533w, /media/gallery/photos/webp/7_full.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/7.jpg" alt="Portfolio" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/8.jpg" class="preview-photo" data-lightbox data-album="portfolio">
-                <img src="/media/gallery/photos/8.jpg" alt="Portfolio" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/8_thumb.webp 266w, /media/gallery/photos/medium/8_medium.webp 533w, /media/gallery/photos/webp/8_full.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/8.jpg" alt="Portfolio" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/9.jpg" class="preview-photo" data-lightbox data-album="portfolio">
-                <img src="/media/gallery/photos/9.jpg" alt="Portfolio" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/9_thumb.webp 266w, /media/gallery/photos/medium/9_medium.webp 533w, /media/gallery/photos/webp/9_full.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/9.jpg" alt="Portfolio" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/10.jpg" class="preview-photo" data-lightbox data-album="portfolio">
-                <img src="/media/gallery/photos/10.jpg" alt="Portfolio" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/10_thumb.webp 266w, /media/gallery/photos/medium/10_medium.webp 533w, /media/gallery/photos/webp/10_full.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/10.jpg" alt="Portfolio" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/11.jpg" class="preview-photo" data-lightbox data-album="portfolio">
-                <img src="/media/gallery/photos/11.jpg" alt="Portfolio" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/11_thumb.webp 711w, /media/gallery/photos/medium/11_medium.webp 1422w, /media/gallery/photos/webp/11_full.webp 1200w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/11.jpg" alt="Portfolio" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/12.jpg" class="preview-photo" data-lightbox data-album="portfolio">
-                <img src="/media/gallery/photos/12.jpg" alt="Portfolio" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/12_thumb.webp 600w, /media/gallery/photos/medium/12_medium.webp 1200w, /media/gallery/photos/webp/12_full.webp 1200w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/12.jpg" alt="Portfolio" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/13.jpg" class="preview-photo" data-lightbox data-album="portfolio">
-                <img src="/media/gallery/photos/13.jpg" alt="Portfolio" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/13_thumb.webp 600w, /media/gallery/photos/medium/13_medium.webp 1200w, /media/gallery/photos/webp/13_full.webp 1200w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/13.jpg" alt="Portfolio" loading="lazy" decoding="async">
+                </picture>
             </a>
             
         </div>
@@ -155,67 +216,147 @@
         <div class="album-preview">
             
             <a href="/media/gallery/photos/2021-02-24_09.49.29.jpg" class="preview-photo" data-lightbox data-album="tasmania">
-                <img src="/media/gallery/photos/2021-02-24_09.49.29.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/2021-02-24_09.49.29_thumb.webp 500w, /media/gallery/photos/medium/2021-02-24_09.49.29_medium.webp 1000w, /media/gallery/photos/webp/2021-02-24_09.49.29_full.webp 1500w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/2021-02-24_09.49.29.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/2021-02-23_16.36.03.jpg" class="preview-photo" data-lightbox data-album="tasmania">
-                <img src="/media/gallery/photos/2021-02-23_16.36.03.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/2021-02-23_16.36.03_thumb.webp 320w, /media/gallery/photos/medium/2021-02-23_16.36.03_medium.webp 640w, /media/gallery/photos/webp/2021-02-23_16.36.03_full.webp 960w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/2021-02-23_16.36.03.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/2021-02-24_18.53.10.jpg" class="preview-photo" data-lightbox data-album="tasmania">
-                <img src="/media/gallery/photos/2021-02-24_18.53.10.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/2021-02-24_18.53.10_thumb.webp 320w, /media/gallery/photos/medium/2021-02-24_18.53.10_medium.webp 640w, /media/gallery/photos/webp/2021-02-24_18.53.10_full.webp 960w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/2021-02-24_18.53.10.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/2021-02-24_16.45.42.jpg" class="preview-photo" data-lightbox data-album="tasmania">
-                <img src="/media/gallery/photos/2021-02-24_16.45.42.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/2021-02-24_16.45.42_thumb.webp 320w, /media/gallery/photos/medium/2021-02-24_16.45.42_medium.webp 640w, /media/gallery/photos/webp/2021-02-24_16.45.42_full.webp 960w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/2021-02-24_16.45.42.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/2021-02-24_07.16.25.jpg" class="preview-photo" data-lightbox data-album="tasmania">
-                <img src="/media/gallery/photos/2021-02-24_07.16.25.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/2021-02-24_07.16.25_thumb.webp 320w, /media/gallery/photos/medium/2021-02-24_07.16.25_medium.webp 640w, /media/gallery/photos/webp/2021-02-24_07.16.25_full.webp 960w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/2021-02-24_07.16.25.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/2021-02-24_06.24.50.jpg" class="preview-photo" data-lightbox data-album="tasmania">
-                <img src="/media/gallery/photos/2021-02-24_06.24.50.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/2021-02-24_06.24.50_thumb.webp 320w, /media/gallery/photos/medium/2021-02-24_06.24.50_medium.webp 640w, /media/gallery/photos/webp/2021-02-24_06.24.50_full.webp 960w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/2021-02-24_06.24.50.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/2021-02-24_06.19.54.jpg" class="preview-photo" data-lightbox data-album="tasmania">
-                <img src="/media/gallery/photos/2021-02-24_06.19.54.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/2021-02-24_06.19.54_thumb.webp 320w, /media/gallery/photos/medium/2021-02-24_06.19.54_medium.webp 640w, /media/gallery/photos/webp/2021-02-24_06.19.54_full.webp 960w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/2021-02-24_06.19.54.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/2021-02-23_16.28.37.jpg" class="preview-photo" data-lightbox data-album="tasmania">
-                <img src="/media/gallery/photos/2021-02-23_16.28.37.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/2021-02-23_16.28.37_thumb.webp 320w, /media/gallery/photos/medium/2021-02-23_16.28.37_medium.webp 640w, /media/gallery/photos/webp/2021-02-23_16.28.37_full.webp 960w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/2021-02-23_16.28.37.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/2021-02-23_15.49.07.jpg" class="preview-photo" data-lightbox data-album="tasmania">
-                <img src="/media/gallery/photos/2021-02-23_15.49.07.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/2021-02-23_15.49.07_thumb.webp 600w, /media/gallery/photos/medium/2021-02-23_15.49.07_medium.webp 1200w, /media/gallery/photos/webp/2021-02-23_15.49.07_full.webp 1800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/2021-02-23_15.49.07.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/2021-02-23_14.53.25.jpg" class="preview-photo" data-lightbox data-album="tasmania">
-                <img src="/media/gallery/photos/2021-02-23_14.53.25.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/2021-02-23_14.53.25_thumb.webp 320w, /media/gallery/photos/medium/2021-02-23_14.53.25_medium.webp 640w, /media/gallery/photos/webp/2021-02-23_14.53.25_full.webp 960w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/2021-02-23_14.53.25.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/2021-02-23_14.17.02.jpg" class="preview-photo" data-lightbox data-album="tasmania">
-                <img src="/media/gallery/photos/2021-02-23_14.17.02.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/2021-02-23_14.17.02_thumb.webp 320w, /media/gallery/photos/medium/2021-02-23_14.17.02_medium.webp 640w, /media/gallery/photos/webp/2021-02-23_14.17.02_full.webp 960w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/2021-02-23_14.17.02.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/2021-02-22_14.59.32.jpg" class="preview-photo" data-lightbox data-album="tasmania">
-                <img src="/media/gallery/photos/2021-02-22_14.59.32.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/2021-02-22_14.59.32_thumb.webp 320w, /media/gallery/photos/medium/2021-02-22_14.59.32_medium.webp 640w, /media/gallery/photos/webp/2021-02-22_14.59.32_full.webp 960w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/2021-02-22_14.59.32.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/2021-02-22_14.56.15.jpg" class="preview-photo" data-lightbox data-album="tasmania">
-                <img src="/media/gallery/photos/2021-02-22_14.56.15.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/2021-02-22_14.56.15_thumb.webp 320w, /media/gallery/photos/medium/2021-02-22_14.56.15_medium.webp 640w, /media/gallery/photos/webp/2021-02-22_14.56.15_full.webp 960w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/2021-02-22_14.56.15.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/2021-02-22_14.51.20.jpg" class="preview-photo" data-lightbox data-album="tasmania">
-                <img src="/media/gallery/photos/2021-02-22_14.51.20.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/2021-02-22_14.51.20_thumb.webp 500w, /media/gallery/photos/medium/2021-02-22_14.51.20_medium.webp 1000w, /media/gallery/photos/webp/2021-02-22_14.51.20_full.webp 1500w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/2021-02-22_14.51.20.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/2021-02-22_14.18.04.jpg" class="preview-photo" data-lightbox data-album="tasmania">
-                <img src="/media/gallery/photos/2021-02-22_14.18.04.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/2021-02-22_14.18.04_thumb.webp 320w, /media/gallery/photos/medium/2021-02-22_14.18.04_medium.webp 640w, /media/gallery/photos/webp/2021-02-22_14.18.04_full.webp 960w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/2021-02-22_14.18.04.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/2021-02-22_14.07.34.jpg" class="preview-photo" data-lightbox data-album="tasmania">
-                <img src="/media/gallery/photos/2021-02-22_14.07.34.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/2021-02-22_14.07.34_thumb.webp 320w, /media/gallery/photos/medium/2021-02-22_14.07.34_medium.webp 640w, /media/gallery/photos/webp/2021-02-22_14.07.34_full.webp 960w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/2021-02-22_14.07.34.jpg" alt="Tasmania" loading="lazy" decoding="async">
+                </picture>
             </a>
             
         </div>
@@ -229,71 +370,156 @@
         <div class="album-preview">
             
             <a href="/media/gallery/photos/DSC07545_FG2PzoN.jpg" class="preview-photo" data-lightbox data-album="japan">
-                <img src="/media/gallery/photos/DSC07545_FG2PzoN.jpg" alt="Japan" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/DSC07545_FG2PzoN_thumb.webp 266w, /media/gallery/photos/medium/DSC07545_FG2PzoN_medium.webp 533w, /media/gallery/photos/webp/DSC07545_FG2PzoN_full.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/DSC07545_FG2PzoN.jpg" alt="Japan" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/DSC07502_1_i0M7Nyx.jpg" class="preview-photo" data-lightbox data-album="japan">
-                <img src="/media/gallery/photos/DSC07502_1_i0M7Nyx.jpg" alt="Japan" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/DSC07502_1_i0M7Nyx_thumb.webp 266w, /media/gallery/photos/medium/DSC07502_1_i0M7Nyx_medium.webp 533w, /media/gallery/photos/webp/DSC07502_1_i0M7Nyx_full.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/DSC07502_1_i0M7Nyx.jpg" alt="Japan" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/DSC07497_1_D15vVIe.jpg" class="preview-photo" data-lightbox data-album="japan">
-                <img src="/media/gallery/photos/DSC07497_1_D15vVIe.jpg" alt="Japan" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/DSC07497_1_D15vVIe_thumb.webp 266w, /media/gallery/photos/medium/DSC07497_1_D15vVIe_medium.webp 533w, /media/gallery/photos/webp/DSC07497_1_D15vVIe_full.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/DSC07497_1_D15vVIe.jpg" alt="Japan" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/DSC07496_1_kxGdPzo.jpg" class="preview-photo" data-lightbox data-album="japan">
-                <img src="/media/gallery/photos/DSC07496_1_kxGdPzo.jpg" alt="Japan" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/DSC07496_1_kxGdPzo_thumb.webp 266w, /media/gallery/photos/medium/DSC07496_1_kxGdPzo_medium.webp 533w, /media/gallery/photos/webp/DSC07496_1_kxGdPzo_full.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/DSC07496_1_kxGdPzo.jpg" alt="Japan" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/DSC07483_ngBW44m.jpg" class="preview-photo" data-lightbox data-album="japan">
-                <img src="/media/gallery/photos/DSC07483_ngBW44m.jpg" alt="Japan" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/DSC07483_ngBW44m_thumb.webp 266w, /media/gallery/photos/medium/DSC07483_ngBW44m_medium.webp 533w, /media/gallery/photos/webp/DSC07483_ngBW44m_full.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/DSC07483_ngBW44m.jpg" alt="Japan" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/DSC07465_1_4hINXAp.jpg" class="preview-photo" data-lightbox data-album="japan">
-                <img src="/media/gallery/photos/DSC07465_1_4hINXAp.jpg" alt="Japan" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/DSC07465_1_4hINXAp_thumb.webp 600w, /media/gallery/photos/medium/DSC07465_1_4hINXAp_medium.webp 1200w, /media/gallery/photos/webp/DSC07465_1_4hINXAp_full.webp 1800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/DSC07465_1_4hINXAp.jpg" alt="Japan" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/DSC07596_sbVywgc.jpg" class="preview-photo" data-lightbox data-album="japan">
-                <img src="/media/gallery/photos/DSC07596_sbVywgc.jpg" alt="Japan" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/DSC07596_sbVywgc_thumb.webp 266w, /media/gallery/photos/medium/DSC07596_sbVywgc_medium.webp 533w, /media/gallery/photos/webp/DSC07596_sbVywgc_full.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/DSC07596_sbVywgc.jpg" alt="Japan" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/DSC08553_Panorama_1_copy_72zIQZE.jpg" class="preview-photo" data-lightbox data-album="japan">
-                <img src="/media/gallery/photos/DSC08553_Panorama_1_copy_72zIQZE.jpg" alt="Japan" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/DSC08553_Panorama_1_copy_72zIQZE_thumb.webp 320w, /media/gallery/photos/medium/DSC08553_Panorama_1_copy_72zIQZE_medium.webp 640w, /media/gallery/photos/webp/DSC08553_Panorama_1_copy_72zIQZE_full.webp 960w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/DSC08553_Panorama_1_copy_72zIQZE.jpg" alt="Japan" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/DSC08402_AayFoCO.jpg" class="preview-photo" data-lightbox data-album="japan">
-                <img src="/media/gallery/photos/DSC08402_AayFoCO.jpg" alt="Japan" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/DSC08402_AayFoCO_thumb.webp 266w, /media/gallery/photos/medium/DSC08402_AayFoCO_medium.webp 533w, /media/gallery/photos/webp/DSC08402_AayFoCO_full.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/DSC08402_AayFoCO.jpg" alt="Japan" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/DSC07786_Pyhxend.jpeg" class="preview-photo" data-lightbox data-album="japan">
-                <img src="/media/gallery/photos/DSC07786_Pyhxend.jpeg" alt="Japan" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/DSC07786_Pyhxend_thumb.webp 600w, /media/gallery/photos/medium/DSC07786_Pyhxend_medium.webp 1200w, /media/gallery/photos/webp/DSC07786_Pyhxend_full.webp 1800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/DSC07786_Pyhxend.jpeg" alt="Japan" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/DSC07519_1_J29eWmq.jpg" class="preview-photo" data-lightbox data-album="japan">
-                <img src="/media/gallery/photos/DSC07519_1_J29eWmq.jpg" alt="Japan" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/DSC07519_1_J29eWmq_thumb.webp 266w, /media/gallery/photos/medium/DSC07519_1_J29eWmq_medium.webp 533w, /media/gallery/photos/webp/DSC07519_1_J29eWmq_full.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/DSC07519_1_J29eWmq.jpg" alt="Japan" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/DSC07431_1_r3PnoWt.jpg" class="preview-photo" data-lightbox data-album="japan">
-                <img src="/media/gallery/photos/DSC07431_1_r3PnoWt.jpg" alt="Japan" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/DSC07431_1_r3PnoWt_thumb.webp 600w, /media/gallery/photos/medium/DSC07431_1_r3PnoWt_medium.webp 1200w, /media/gallery/photos/webp/DSC07431_1_r3PnoWt_full.webp 1800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/DSC07431_1_r3PnoWt.jpg" alt="Japan" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/DSC07422_1_AvFPdTx.jpg" class="preview-photo" data-lightbox data-album="japan">
-                <img src="/media/gallery/photos/DSC07422_1_AvFPdTx.jpg" alt="Japan" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/DSC07422_1_AvFPdTx_thumb.webp 266w, /media/gallery/photos/medium/DSC07422_1_AvFPdTx_medium.webp 533w, /media/gallery/photos/webp/DSC07422_1_AvFPdTx_full.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/DSC07422_1_AvFPdTx.jpg" alt="Japan" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/DSC07387_1_ioZerVR.jpg" class="preview-photo" data-lightbox data-album="japan">
-                <img src="/media/gallery/photos/DSC07387_1_ioZerVR.jpg" alt="Japan" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/DSC07387_1_ioZerVR_thumb.webp 600w, /media/gallery/photos/medium/DSC07387_1_ioZerVR_medium.webp 1200w, /media/gallery/photos/webp/DSC07387_1_ioZerVR_full.webp 1800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/DSC07387_1_ioZerVR.jpg" alt="Japan" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/DSC07356_btJzaQR.jpg" class="preview-photo" data-lightbox data-album="japan">
-                <img src="/media/gallery/photos/DSC07356_btJzaQR.jpg" alt="Japan" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/DSC07356_btJzaQR_thumb.webp 599w, /media/gallery/photos/medium/DSC07356_btJzaQR_medium.webp 1199w, /media/gallery/photos/webp/DSC07356_btJzaQR_full.webp 1799w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/DSC07356_btJzaQR.jpg" alt="Japan" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/DSC07236_VwKxBMl.jpg" class="preview-photo" data-lightbox data-album="japan">
-                <img src="/media/gallery/photos/DSC07236_VwKxBMl.jpg" alt="Japan" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/DSC07236_VwKxBMl_thumb.webp 266w, /media/gallery/photos/medium/DSC07236_VwKxBMl_medium.webp 533w, /media/gallery/photos/webp/DSC07236_VwKxBMl_full.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/DSC07236_VwKxBMl.jpg" alt="Japan" loading="lazy" decoding="async">
+                </picture>
             </a>
             
             <a href="/media/gallery/photos/DSC07147_ddqusBs.jpg" class="preview-photo" data-lightbox data-album="japan">
-                <img src="/media/gallery/photos/DSC07147_ddqusBs.jpg" alt="Japan" loading="lazy" decoding="async">
+                <picture>
+                    
+                    <source type="image/webp" srcset="/media/gallery/photos/thumbnails/DSC07147_ddqusBs_thumb.webp 600w, /media/gallery/photos/medium/DSC07147_ddqusBs_medium.webp 1200w, /media/gallery/photos/webp/DSC07147_ddqusBs_full.webp 1800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw">
+                    
+                    <img src="/media/gallery/photos/DSC07147_ddqusBs.jpg" alt="Japan" loading="lazy" decoding="async">
+                </picture>
             </a>
             
         </div>
@@ -425,6 +651,33 @@
                     }
                 }
             }
+        })();
+        </script>
+
+        <!-- Google Analytics - deferred loading for better performance -->
+        <script>
+        (function() {
+            // Load GA after page interaction or after 3 seconds, whichever comes first
+            var loaded = false;
+            function loadGA() {
+                if (loaded) return;
+                loaded = true;
+                var script = document.createElement('script');
+                script.src = 'https://www.googletagmanager.com/gtag/js?id=G-47GTWN9S5M';
+                script.async = true;
+                document.head.appendChild(script);
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                window.gtag = gtag;
+                gtag('js', new Date());
+                gtag('config', 'G-47GTWN9S5M');
+            }
+            // Load on first interaction
+            ['scroll', 'click', 'touchstart', 'keydown'].forEach(function(event) {
+                document.addEventListener(event, loadGA, {once: true, passive: true});
+            });
+            // Or after 3 seconds if no interaction
+            setTimeout(loadGA, 3000);
         })();
         </script>
     </body>
